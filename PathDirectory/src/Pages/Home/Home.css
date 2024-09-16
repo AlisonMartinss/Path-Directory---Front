@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.header{
+    width: 100%;
+    height: 50%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    background-image: linear-gradient(to left,#8DD83B,#064789);
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 1.5%;
+    margin-bottom: 1%;
+
+    gap: 35px;
+
+    color: rgb(255, 255, 255);
+ 
+}
+
+.texCabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    margin-top: 4%;
+    margin-bottom: 3%;
+
+    gap: 35px;
+}
+
+.logo{
+
+   position: absolute;
+
+    width: 150px;
+    height: 45px;
+
+    padding: 0%;
+
+    left: 5%;
+
+}   
