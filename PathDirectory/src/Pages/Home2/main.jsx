@@ -1,5 +1,6 @@
 import SlideShow from '../FunçõesGlobais/Slide/slideShow';
 import '../Home2/main.css'
+import '../../Midia/trilha02.png'
 
 
 function Mainnn () {
@@ -10,8 +11,11 @@ return(
 <div className="backCarrosel">
     <div className="carrosel"><SlideShow/></div>
     <div className="slogan">
-    <h4>Guie seus primeiros passos <strong>com quem já trilhou o caminho.</strong></h4>
-    <h4>Playlists,guias e insigths para sua jornada profissional.</h4>
+      <h4>Guie seus primeiros passos <strong>com quem já trilhou o caminho.</strong></h4>
+      <h4>Playlists,guias e insigths para sua jornada profissional.</h4>
+    </div>
+    <div className="trilha">
+      <img src="../../Midia/trilha02.png" alt="icone de trilha" />
     </div>
     <div className="Csuaconta">
         <a href="">Crie sua conta</a>

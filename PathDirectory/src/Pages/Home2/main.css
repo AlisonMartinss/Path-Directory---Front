@@ -21,6 +21,16 @@ background-color: #8791ab90;
     border-radius: 12px;
 }
 
+.trilha{
+    width: 7%;
+    height: 10%;
+    position: absolute;
+    z-index: 1;
+    background-color: antiquewhite;
+    padding: 10%;
+    border-radius: 50%;
+}
+
 strong{
     color: #FFE0A3;
 }
