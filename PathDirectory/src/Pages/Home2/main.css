@@ -73,9 +73,31 @@ strong{
 
 .orientacao{
     position: absolute;
-    
-    right: 23.5%;
+    left: 65%;
     top: 65%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+
+
+
+}
+
+.videos{
+    border-radius: 12px;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.videos_1{
+
+    border-radius: 12px;
+    width: 20%;
+    height: 22%;
+    
+
 }
 
 .Qsomos{

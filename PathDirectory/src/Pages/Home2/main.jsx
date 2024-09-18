@@ -21,8 +21,21 @@ return(
         <a href="">Crie sua conta</a>
     </div> 
 </div>
+<div className='orientacao'>
+  
+  <h3 className='orientacao-filho'>Assista também</h3>
 
-<h3 className='orientacao'>Assista também</h3>
+  <div className='videos'>
+      <iframe className='videos_1' width="560" height="315" 
+      src="https://www.youtube.com/embed/6dNiED1dlhA" 
+      title="YouTube video player" frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen></iframe>
+
+  </div>
+</div>
+
+
 
 <div className="Qsomos">
 

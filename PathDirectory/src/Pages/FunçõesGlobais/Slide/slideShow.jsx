@@ -12,10 +12,13 @@ const SlideShow = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 2850,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
+    autoplay: true, 
+    autoplaySpeed: 5000,
+    pauseOnHover: true,  
 
     customPaging: i => (
         <div
