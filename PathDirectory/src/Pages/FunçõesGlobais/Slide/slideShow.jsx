@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import "../Slide/slideShow.css"
+import "../../../../public/Midias/Slide01.png"
 
 
 
@@ -26,7 +27,7 @@ const SlideShow = () => {
             borderRadius: '50%', // Ponto arredondado
             padding: '5px', // Ajuste de espaçamento
             cursor: 'pointer',
-            backgroundColor: '#c4e104',
+            backgroundColor: 'white',
           }}
         >
           
@@ -39,7 +40,7 @@ const SlideShow = () => {
     <div style={{ width: '770px', margin: '0 auto' }}>
       <Slider {...settings}>
         <div className="Slide">
-          <img src= "" alt="Slide 1" />
+          <img className='imagemg'  src= "../../../../public/Midias/Slide01.png" alt="Slide 1" />
         </div>
         <div className="Slide">
           <img src="https://via.placeholder.com/500x300?text=Slide+2" alt="Slide 2" />

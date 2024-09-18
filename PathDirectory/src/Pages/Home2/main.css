@@ -7,7 +7,7 @@ padding-right: 10%;
 padding-top: 10%;
 padding-bottom: 10%;
 margin-top: 1%;
-background-color: #8791ab90;
+background-color: #8791ab63;
     
 }
 
@@ -21,14 +21,29 @@ background-color: #8791ab90;
     border-radius: 12px;
 }
 
-.trilha{
-    width: 7%;
-    height: 10%;
+.adjetivos{
     position: absolute;
     z-index: 1;
-    background-color: antiquewhite;
-    padding: 10%;
-    border-radius: 50%;
+
+    right: 48%;
+    top: 27%;
+    gap: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    color: #ffffff;
+}
+
+.trilha{
+    width: 90px;
+    height: 90px;
+
+    position: absolute;
+    z-index: 1;
+    left: 33.5%;
+    top: 35%;
+   
 }
 
 strong{
