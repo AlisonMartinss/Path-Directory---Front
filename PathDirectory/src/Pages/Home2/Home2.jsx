@@ -5,7 +5,7 @@ function Home2() {
     return( 
     <div className="header">
         
-      <div className="cabecalho">
+      <div className="cabecalho" >
             
          <img className="logo"   src="../src/Midia/Logo-lite.png" alt="Logo Path Carrer" />
 
