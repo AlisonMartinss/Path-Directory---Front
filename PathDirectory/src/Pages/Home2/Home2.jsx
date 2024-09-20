@@ -1,18 +1,16 @@
 import { useState } from "react";
 import '../Home/Home.css'
 
-function Home2() {
+function Home2(props) {
     return( 
     <div className="header">
         
       <div className="cabecalho" >
             
-         <img className="logo"   src="../src/Midia/Logo-lite.png" alt="Logo Path Carrer" />
-
-         <h3>Area do Usuario</h3>
-         <h3>Quem Somos</h3>
-         <h3>Cental de ajuda</h3>
-        
+        <img className="logo"   src="../src/Midia/Logo-lite.png" alt="Logo Path Carrer" />
+          <a className="cabecalho_links" href={props.L1}>{props.n1}</a>
+          <a className="cabecalho_links" href={props.L2}>{props.n2}</a>
+          <a className="cabecalho_links" href={props.L3}>{props.n3}</a>    
       </div>
     </div>
 )}

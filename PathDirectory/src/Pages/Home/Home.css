@@ -33,12 +33,17 @@
 
     font-family: "Comfortaa", sans-serif;
     font-optical-sizing: none;
-    font-weight: 300;
+    font-weight: 800;
     font-style: normal;
 
-    font-size: 15px;
+    font-size: 17px;
 
 
+}
+
+.cabecalho_links{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 
 .texCabecalho{

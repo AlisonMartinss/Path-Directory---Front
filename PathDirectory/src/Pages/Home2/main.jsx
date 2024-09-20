@@ -21,11 +21,11 @@ return(
         <a className='Csuaconta_filho'  href="">Crie sua conta</a>
     </div> 
 </div>
-<div className='orientacao'>
+<div className='orientacao slogantxt'>
 
   <h3 className='orientacao-filho'>Assista também</h3>
 
-  <div className='videos'>
+  <div className='videos '>
       <iframe className='videos_1' width="560" height="315" 
       src="https://www.youtube.com/embed/6dNiED1dlhA" 
       title="YouTube video player" frameborder="0" 
@@ -47,7 +47,7 @@ return(
     </div>
     
     <div className='txt02'>
-      <h4 className='txt02_filho'>Com essas playlists, criadas por pessoas do meio ao qual o conteúdo se refere, você pode otimizar 
+      <h4 className='txt02_filho slogantxt'>Com essas playlists, criadas por pessoas do meio ao qual o conteúdo se refere, você pode otimizar 
         seu tempo e sua produtividade,além de se poupar de fazer buscas que levariam horas para encontrar
         um conteúdo de qualidade.</h4>
       <h4></h4>
