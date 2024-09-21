@@ -1,6 +1,7 @@
 /* MINHAS IMPORTAÇÕES */
 import Home from '../src/Pages/Home/Home'
 import Login from '../src/Pages/Login/Login'
+import Loby from '../src/Pages/Loby/Loby'
 
 /* ROTAAS */
 import {createBrowserRouter, createRoutesFromElements,RouterProvider, Route} from 'react-router-dom'
@@ -15,6 +16,7 @@ createBrowserRouter(createRoutesFromElements(
 <Route path="/">
   <Route index element={<Home/>}/>
   <Route path="/Login" element={<Login/>}/>
+  <Route path="/Loby" element={<Loby/>}/>
 
 </Route>
 ))
