@@ -1,6 +1,6 @@
 /* MINHAS IMPORTAÇÕES */
 import Home from '../src/Pages/Home/Home'
-import Mainnn from '../src/Pages/Home2/main'
+import Login from '../src/Pages/Login/Login'
 
 /* ROTAAS */
 import {createBrowserRouter, createRoutesFromElements,RouterProvider, Route} from 'react-router-dom'
@@ -14,6 +14,7 @@ const browserRouter =
 createBrowserRouter(createRoutesFromElements(
 <Route path="/">
   <Route index element={<Home/>}/>
+  <Route path="/Login" element={<Login/>}/>
 
 </Route>
 ))
