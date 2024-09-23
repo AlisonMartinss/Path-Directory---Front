@@ -1,0 +1,21 @@
+button {
+    font-size: 20px;
+    color: #032885;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 0px solid #fafafa;
+    background: #c4e104;
+    box-shadow: 3px 3px #6a790a;
+    cursor: pointer;
+
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: none;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  button:active {
+    box-shadow: none;
+    transform: translate(3px, 3px);
+  }
+  

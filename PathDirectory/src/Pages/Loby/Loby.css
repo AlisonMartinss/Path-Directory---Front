@@ -34,9 +34,9 @@ main{
     width: 90%;
     height: 35%;
 
-    border-radius: 17px;
-    border: solid 4px #ffffff;
-    background-color: #909090;    
+    
+    clip-path: polygon(0px 0px, 100% 0px, 100% calc(100% - 70px), calc(100% - 70px) 100%, 0px 100%);
+    background-color: rgba(116, 124, 129, 0.713);    
 }
 
 .curso_filho{

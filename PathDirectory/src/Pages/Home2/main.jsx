@@ -1,6 +1,7 @@
 import SlideShow from '../FunçõesGlobais/Slide/slideShow';
 import '../Home2/main.css'
 import '../../../public/Midias/trilha02.png'
+import Botao from '../FunçõesGlobais/Botão/Botao';
 
 
 function Mainnn () {
@@ -10,16 +11,19 @@ return(
 
 <div className="backCarrosel">
     <div className="carrosel"><SlideShow/></div>
-    <div className="slogan">
-      <h4 className='slogantxt'>Guie seus primeiros passos <strong>com quem já trilhou o caminho.</strong></h4>
-      <h4 className='slogantxt'>Playlists,guias e insigths para sua jornada profissional.</h4>
+      <div className='slogan'>
+        <div className="slogan_filho">
+          <h4 className='slogantxt'>Guie seus primeiros passos <strong>com quem já trilhou o caminho.</strong></h4>
+          <h4 className='slogantxt'>Playlists,guias e insigths para sua jornada profissional.</h4>
+        </div>
+   
+        <div className="Csuaconta">
+          <Botao texto={"Crie Sua Conta"}/>
+        </div> 
     </div>
     <div >
       <img className="trilha" src="../../../public/Midias/trilha02.png" alt="icone de trilha" />
     </div>
-    <div className="Csuaconta">
-        <a className='Csuaconta_filho'  href="">Crie sua conta</a>
-    </div> 
 </div>
 <div className='orientacao slogantxt'>
 

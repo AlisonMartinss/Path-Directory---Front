@@ -16,12 +16,17 @@ background-color: #8791ab63;
 }
 
 .slogan{
+    position: absolute;
+}
+
+.slogan_filho{
+    width: 100%;
     color: rgb(255, 255, 255);
     background-color:#174292bd ;
-    padding-left: 3.5%;
-    padding-right: 4%;
-    padding-top: 1.5%;
-    padding-bottom: 1.5%;
+    padding-left: 5%;
+    padding-right: 7%;
+    padding-top: 3%;
+    padding-bottom: 3%;
     border-radius: 12px;
 
     font-family: "Comfortaa", sans-serif;
@@ -77,28 +82,20 @@ strong{
 
 .Csuaconta{
 
+ position: relative;
+left: 8%;
+margin-top: -1%;
 
- position: absolute;
- top: 38.5%;
- left: 21%;
+z-index: 1;
     
  display: flex;
  justify-content: center;
  align-items: center;
 
- background-color: #c4e104;
-
- padding-left: 1.1%;
- padding-right: 1.1%;
- padding-top: 0.9%;
- padding-bottom: 0.9%;
- border-radius: 12px;
-
  font-family: "Varela Round", sans-serif;
  font-weight: 700;
  font-style: normal;
 
- font-size: 17px;
 
 }
 
