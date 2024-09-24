@@ -1,5 +1,6 @@
 import Home2 from "../Home2/Home2";
 import '../Login/Login.css'
+import '../FunçõesGlobais/Botão/Botao.css'
 
 function Login () {
     return(
@@ -19,7 +20,7 @@ function Login () {
                 </div>
                 
                 <div className="entrar_b">
-                    <button type="submit" className="inside_entrar">Entrar</button>
+                    <button type="submit" className="inside_entrar botao">Entrar</button>
                 </div>
 
                 <a href="" className="esqueceu">Esqueçeu a Senha?</a>

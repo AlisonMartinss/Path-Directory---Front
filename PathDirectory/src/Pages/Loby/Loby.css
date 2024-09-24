@@ -2,7 +2,7 @@
 
 .all{
     width: 100vw;
-    height: 100vh;
+    height: 99vh;
     overflow-x: hidden; 
     overflow-y: hidden;
 
@@ -31,18 +31,20 @@ main{
 }
 
 .curso{
-    width: 90%;
+    width: 73%;
     height: 35%;
 
-    
     clip-path: polygon(0px 0px, 100% 0px, 100% calc(100% - 70px), calc(100% - 70px) 100%, 0px 100%);
-    background-color: rgba(116, 124, 129, 0.713);    
+    background-color: #8791AB;
+    border: none;
+
+    transition: all 0.4s;
 }
 
 .curso_filho{
     position: relative;
-    left: 12%;
-    top: 10%;
+    left: 10%;
+    top: 14%;
     color: #ffffff;
 
     font-family: "Montserrat", sans-serif;
@@ -50,6 +52,61 @@ main{
     font-weight: 300;
     font-style: normal;
 
-    font-size: 25px;   
-
+    font-size: 25px;  
 }
+
+
+/* PERFIL */
+
+.perfil{
+    width: 30%;
+    height: 70%;
+
+
+    margin-left: 65%;
+
+    margin-top: -31.8%;
+    background-color: aqua;
+    
+}
+
+.perfil_jr{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: blue;
+
+    gap: 30px;
+}
+
+.fotoperfil{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+/* Hovers */
+
+.curso:hover{
+    transform: translateY(-7px);
+    transition: all 0.4s;
+  
+}
+
+.card {
+    width: 280px;
+    height: 150px;
+    background: rgb(17, 4, 134);
+    border-radius: 15px;
+    box-shadow: rgb(0,0,0,0.7) 5px 10px 50px ,rgb(0,0,0,0.7) -5px 0px 250px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    background: linear-gradient(to right, rgb(20, 30, 48), rgb(36, 59, 85));
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+  }

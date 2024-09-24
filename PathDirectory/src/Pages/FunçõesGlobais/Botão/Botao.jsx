@@ -3,7 +3,7 @@ import '../Botão/Botao.css'
 function Botao(props){
     return(
         <div>
-            <button>{props.texto}</button>
+            <button className='botao'>{props.texto}</button>
         </div>
     )
 }
