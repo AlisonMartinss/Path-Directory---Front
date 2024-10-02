@@ -1,11 +1,18 @@
 import Home2 from "../Home2/Home2";
 import Porcentagem from "../FunçõesGlobais/Barra Porcentagem/Porcentagem";
+import CabecalhoPesquisa from "../FunçõesGlobais/CabecalhoPesquisa/CabecalhoPesquisa.jsx"
 import '../Loby/Loby.css'
 
 function Loby () {
     return(
     <div className="all">
-        <header><Home2/></header>
+        <header className="cabecalho_home"><Home2/></header>
+    
+        <form className="cabecalho_o">
+            <input className="searchArea" type="text" placeholder="funciona?" id="pesquisa"/>
+        </form>
+
+       
         <main className="main">
 
                 <div className="listagem">
@@ -30,13 +37,13 @@ function Loby () {
                         <div>
                            <img className="fotoperfil" src="https://github.com/AlisonMartinss/Assets/blob/main/Captura%20de%20tela%202024-06-19%20141014.png?raw=true" alt="" />
                         </div>
-                        <div>
+                        <div className="info">
                             Credencial: Academica
                         </div>
-                        <div>
+                        <div  className="info">
                             Nome: Sivirino
                         </div>
-                        <div>
+                        <div  className="info">
                             Path Criados 
                         </div>
                     </div>

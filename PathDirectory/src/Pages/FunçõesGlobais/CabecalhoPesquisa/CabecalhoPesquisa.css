@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+
+.CabecalhoPesquisa{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: black;
+
+    background-image: linear-gradient(to left,#8DD83B,#064789);
+}
+
+.CabecalhoPesquisa_jr{
+    background-color: black;
+    width: 30%;
+    height: 300px;
+}
