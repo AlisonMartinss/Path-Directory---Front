@@ -1,8 +1,8 @@
 import Home2 from "../Home2/Home2";
 import Porcentagem from "../FunçõesGlobais/Barra Porcentagem/Porcentagem";
-import CabecalhoPesquisa from "../FunçõesGlobais/CabecalhoPesquisa/CabecalhoPesquisa.jsx"
 import '../Loby/Loby.css'
 import '../../../public/Midias/Lapis-Edit.png'
+import '../../../public/Midias/lupa.png'
 
 
 function Loby () {
@@ -12,6 +12,9 @@ function Loby () {
     
         <form className="cabecalho_o">
             <input className="searchArea" type="text" placeholder="funciona?" id="pesquisa"/>
+            <div className="searchButton">
+                <button className="searchButton_jr"  type="submit"><img className="icone_lupa" src="../../../public/Midias/lupa.png" alt="" /></button>
+            </div>
         </form>
 
        

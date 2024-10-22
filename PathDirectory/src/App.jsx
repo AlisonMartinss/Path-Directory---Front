@@ -2,10 +2,12 @@
 import Home from '../src/Pages/Home/Home'
 import Login from '../src/Pages/Login/Login'
 import Loby from '../src/Pages/Loby/Loby'
+import StarButton from './Pages/FunçõesGlobais/favorito/favorito'
+import Curso from './Pages/curso/curso'
+
 
 /* ROTAAS */
 import {createBrowserRouter, createRoutesFromElements,RouterProvider, Route} from 'react-router-dom'
-
 import './Estiloapp/estiloDoApp.css'
 import '../src/App.css'
 
@@ -15,8 +17,10 @@ const browserRouter =
 createBrowserRouter(createRoutesFromElements(
 <Route path="/">
   <Route index element={<Home/>}/>
-  <Route path="/Login" element={<Login/>}/>
-  <Route path="/Loby" element={<Loby/>}/>
+  <Route path="/login" element={<Login/>}/>
+  <Route path="/loby" element={<Loby/>}/>
+  <Route path="/star" element={<StarButton/>}/>
+  <Route path="/loby/curso" element={<Curso/>}/>
 
 </Route>
 ))
