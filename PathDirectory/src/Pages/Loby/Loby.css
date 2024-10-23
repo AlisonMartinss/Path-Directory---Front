@@ -11,42 +11,61 @@
 
 
     width: 100vw;
-    height: 99vh;
+    height: 100vh;
     overflow-x: hidden; 
     overflow-y: hidden;
 
 }
 
+.header_loby{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    background-color: #ff5100;
+    
+    width: 100%;
+    height: 8%;
+
+    
+
+}
+
+.cabecalho_home_jr{
+    width: 100%;
+    height: 50%;
+  
+
+}
+
 .cabecalho_o{
+    position: relative;
+
+
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 
-   position: relative;
+   
 
     margin-top: 0.5%;
 
     height: 6.5%;
-    width: 25%;
+    width: 35%;
 }
 
-.searchButton{
 
-    position: absolute;
-    left: 102%;
-    top: 10%;
-    border-radius: 50%;
-
-    
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: #8791AB;
-    width: 50px;
-    height: 50px;
+main{
+    width:100%;
+    height: 85%;
 }
+
+
+
+
 
 .searchButton_jr{
     background: none;
@@ -66,13 +85,14 @@
 .searchArea{
 
 background-color: rgb(177, 177, 177);
-width: 100%;
+width: 70%;
 height: 100%;
 
 padding-left: 1%;
 
-border-radius: 12px;
+border-radius: 20px;
 border: none;
+outline: none;
 
 font-family: "Roboto", system-ui;
 font-weight: 400;
@@ -80,14 +100,10 @@ font-style: normal;
 
 
 font-size: 15px;
+
 }
 
 
-
-main{
-    width: 100%;
-    height: 100%;
-}
 
 .listagem{
 
@@ -95,7 +111,7 @@ main{
     width:50% ;
     height: 65%;
 
-    padding-left: 7%;
+    padding-left: 5%;
     padding-top: 5%;
 
     display: flex;
@@ -154,15 +170,14 @@ main{
 
 .perfil{
 
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+display: flex;
+justify-content: center;
+flex-direction: column;
 
-    width: 28%;
-    height: 60%;
+width: 28%;
+height: 60%;
 
-    margin-left: 65%;
-    margin-top: -30%;
+margin-left:18% ;
     
     
 }

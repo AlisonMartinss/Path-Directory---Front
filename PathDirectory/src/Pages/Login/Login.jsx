@@ -4,9 +4,9 @@ import '../FunçõesGlobais/Botão/Botao.css'
 
 function Login () {
     return(
-<div >
-    <header><Home2 n2={"Home"} L2={"http://localhost:5173"} n3={"Central De Ajuda"}/></header>
-    <main>
+<div className='allLogin'>
+    <header className="headerLogin"><Home2 n2={"Home"} L2={"http://localhost:5173"} n3={"Central De Ajuda"}/></header>
+    <main className="mainLogin">
         <div className="form">
             <form className="form_form"  action="">
                 <div className="form_neto">

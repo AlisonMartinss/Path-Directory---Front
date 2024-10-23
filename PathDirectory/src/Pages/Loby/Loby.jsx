@@ -8,16 +8,8 @@ import '../../../public/Midias/lupa.png'
 function Loby () {
     return(
     <div className="all">
-        <header className="cabecalho_home"><Home2/></header>
+        <header className="header_loby"><Home2/></header>
     
-        <form className="cabecalho_o">
-            <input className="searchArea" type="text" placeholder="funciona?" id="pesquisa"/>
-            <div className="searchButton">
-                <button className="searchButton_jr"  type="submit"><img className="icone_lupa" src="../../../public/Midias/lupa.png" alt="" /></button>
-            </div>
-        </form>
-
-       
         <main className="main">
 
                 <div className="listagem">

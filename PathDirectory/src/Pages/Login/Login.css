@@ -1,39 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+
+.allLogin{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
     margin: 0;
     padding: 0;
-    
+    overflow-x: hidden; 
+    overflow-y: hidden;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+.headerLogin{
+    width: 100%;
+    height: 8%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.mainLogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+
+    background-color: #032885;
+    width: 100%;
+    height:100%;
+
+
 }
 
 .form{
 
-    width: 50%;
+    width: 60%;
+    height: 60%;
+
 
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    align-content: center;
 
-    position: absolute;
-    left: 43%;
-    top: 20%;
-    
 }
 
 .form_form{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 
-    background-color: #8791AB;
+    background-color: #0ac335;
 
     width: 28%;
+    height: 100%;
     
-    gap: 40px;
-    padding-top: 10%;
-    padding-left: 2.4%;
-    padding-right: 3%;
-    padding-bottom: 11%;
+    gap: 20px;
 
     border-radius: 39px
 
@@ -43,8 +76,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 
-    width: 5%;
+    width: 70%;
 
     gap: 5px;
 }
@@ -53,7 +87,7 @@
 
     background-color: #D9D9D9;
 
-    width: 265px;
+    width: 115%;
     height: 50px;
 
     border-radius: 12px;
@@ -70,10 +104,6 @@
 }
 
 .inside_entrar{
-    padding-top: 7%;
-    padding-bottom: 7%;
-    padding-left: 21%;
-    padding-right: 21%;
 
     border-radius: 10px;
     border: none;
@@ -90,10 +120,6 @@
 
 }
 
-.entrar_b{
-   
-    margin-left: 25%;
-}
 
 .esqueceu{
 
@@ -103,8 +129,6 @@
     font-style: normal;
 
     color: #ffffff;
-
-    padding-left: 25%;
 
     font-size: 14px;
 
