@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Urbanist:ital,wght@0,201;1,201&display=swap');
+
+.all{
+
+    /*Containers com direção vertical, precisam do aligth-itens, além do obvio */
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden; 
+    overflow-y: hidden;
+
+}
+
+.header_loby{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    background-color: #ff5100;
+    
+    width: 100%;
+    height: 8%;
+
+    
+
+}
+
+.cabecalho_home_jr{
+    width: 100%;
+    height: 50%;
+  
+
+}
+
+.cabecalho_o{
+    position: relative;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+   
+
+    margin-top: 0.5%;
+
+    height: 6.5%;
+    width: 35%;
+}
+
+
+main{
+    width:100%;
+    height: 85%;
+}
+
+
+
+
+
+.searchButton_jr{
+    background: none;
+    border: none;
+}
+
+.icone_lupa{
+    width: 30px;
+    height: 30px;
+}
+
+.cabecalho_home{
+    width: 100%;
+    height: 6%;
+}
+
+.searchArea{
+
+background-color: rgb(177, 177, 177);
+width: 70%;
+height: 100%;
+
+padding-left: 1%;
+
+border-radius: 20px;
+border: none;
+outline: none;
+
+font-family: "Roboto", system-ui;
+font-weight: 400;
+font-style: normal;
+
+
+font-size: 15px;
+
+}
+
+
+
+.listagem{
+
+    
+    width:50% ;
+    height: 65%;
+
+    padding-left: 5%;
+    padding-top: 5%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+   
+
+    gap: 50px;
+}
+
+
+
+.curso{
+    width: 73%;
+    height: 35%;
+
+    position: relative;
+
+    clip-path: polygon(0px 0px, 100% 0px, 100% calc(100% - 70px), calc(100% - 70px) 100%, 0px 100%);
+    background-color: #8791AB;
+    border: none;
+
+    transition: all 0.4s;
+}
+
+.fav_icon{
+    background-color: bisque;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+
+    position: absolute;
+    left: 78%;
+    top: 14%;
+
+    z-index: 1;
+
+}
+
+.curso_filho{
+    position: relative;
+    left: 10%;
+    top: 14%;
+    color: #ffffff;
+
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+
+    font-size: 25px;  
+}
+
+
+/* PERFIL */
+
+.perfil{
+
+display: flex;
+justify-content: center;
+flex-direction: column;
+
+width: 28%;
+height: 60%;
+
+margin-left:18% ;
+    
+    
+}
+
+.perfil_jr{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Isso alinha o conteúdo verticalmente */
+    align-items: center; /* Isso alinha o conteúdo horizontalmente */
+    height: 100vh; /* Define a altura do contêiner para 100% da altura da viewport */
+
+    /*background-color: #8791AB;*/
+
+    border-radius: 20px;
+
+    gap: 15px;
+}
+
+.fotoperfil{
+
+    
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.info{
+
+    gap: 10px;
+
+    display: flex;
+    align-items: center;
+
+    width: 60%;
+ 
+
+}
+
+.info_jr{
+    display: flex;
+    justify-content: center;
+    
+
+    width: 100%;
+
+    border-radius: 12px;
+    padding-top: 2.3%;
+    padding-bottom: 4%;
+    padding-top: 4%;
+ 
+    
+
+    background-color: #8791AB;
+
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+
+    color: #ffffff;
+}
+
+.editar_info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 40px;
+
+    border-radius: 10px;
+    background-color:#8791AB;
+}
+
+.redes_sociais{
+
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 20px;
+
+    width: 58%;
+    height: 10%;
+
+
+}
+
+.rede_jr{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 15.5%;
+    height: 95%;
+
+    gap: 12px;
+    border-radius: 50%;
+
+    background-color:#8791AB;
+
+}
+
+.icon{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+
+
+    width: 25px;
+    height: 25px;
+
+}
+
+/* Hovers */
+
+.curso:hover{
+    
+    transform: translateY(-7px);
+    transition: all 0.4s;
+  
+}
+
