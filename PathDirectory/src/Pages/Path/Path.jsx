@@ -22,8 +22,10 @@ return (
 
     <div className='central'>
         <form className='form_Path' action="">
-            <input className='inside_input_Path' type="text" id="nome" name="nome" placeholder="Digite o nome do seu Path"/>
-
+            <div className='input_Path'>
+              <input className='inside_input_Path' type="text" id="nome" name="nome" placeholder="Digite o nome do seu Path"/>
+            </div>
+            
             <div className='CTO'>
                 Selecione cinco <strong className='stg_Path'>adjetivos</strong> que melhor descrevem o seu Path:
             </div>
@@ -35,6 +37,13 @@ return (
               <CaixaInput/>
               <CaixaInput/>
             </div>
+
+            <div className='descricao'>
+             <textarea className='descricao_area' placeholder='Descreva seu Path . . .' id="description" name="description" rows="4" cols="50" maxlength="3000"></textarea>
+            </div>
+
+            <input className='submit_Path' type="submit" value="Enviar"></input>
+           
         </form>
 
     </div>

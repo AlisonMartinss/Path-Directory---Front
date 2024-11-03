@@ -1,0 +1,22 @@
+.opcoes_input{
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: none;
+    font-weight:800;
+    font-style: regular;
+    font-size: 14px;
+
+    border-radius: 5px;
+    border: solid 1px #FFFF;
+
+
+    background-color: #95eb54b1;
+    width: 45%;
+
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    padding-left: 2%;
+    padding-right: 2%;
+
+    outline: none;
+    
+}
