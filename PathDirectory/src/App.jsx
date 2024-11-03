@@ -5,6 +5,7 @@ import Loby from '../src/Pages/Loby/Loby'
 import StarButton from './Pages/FunçõesGlobais/favorito/favorito'
 import Curso from './Pages/curso/curso'
 import Path from '../src/Pages/Path/Path'
+import Criarmodulo from './Pages/CriarModulo/Criarmodulo'
 
 
 /* ROTAAS */
@@ -23,6 +24,7 @@ createBrowserRouter(createRoutesFromElements(
   <Route path="/star" element={<StarButton/>}/>
   <Route path="/loby/curso" element={<Curso/>}/>
   <Route path="/loby/path" element={<Path/>}/>
+  <Route path="/loby/modulo" element={<Criarmodulo/>}/>
 
 </Route>
 ))
