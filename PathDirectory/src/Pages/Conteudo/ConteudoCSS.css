@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+
+.cud-main{
+    display: flex;
+    flex-direction: column;
+
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.cud-header{
+    width: 100%;
+    height: 12%;
+}
+
+.cud-home-c{
+    width: 100%;
+    height: 100%;
+}
