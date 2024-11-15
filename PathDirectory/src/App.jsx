@@ -26,8 +26,8 @@ createBrowserRouter(createRoutesFromElements(
   <Route path="/star" element={<StarButton/>}/>
   <Route path="/loby/curso" element={<Curso/>}/>
   <Route path="/loby/path" element={<Path/>}/>
-  <Route path="/loby/modulo" element={<Criarmodulo/>}/>
-  <Route path="/loby/modulo/conteudo" element={<Conteudo/>}/>
+  <Route path="/loby/path/modulo" element={<Criarmodulo/>}/>
+  <Route path="/loby/path/modulo/conteudo" element={<Conteudo/>}/>
 </Route>
 ))
 

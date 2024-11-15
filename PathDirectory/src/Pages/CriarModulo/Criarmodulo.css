@@ -166,8 +166,13 @@ align-items: center;
 width: 90%;
 height: 80%;
 
-border: solid #625353 2px;
+border: solid #625353b3 3px;
 border-radius: 12px;
+
+position: relative; /* Necessário para posicionar o pseudo-elemento */
+overflow: hidden; /* Garante que o pseudo-elemento não ultrapasse os limites */
+
+
 }
 
 
@@ -286,3 +291,5 @@ border-radius: 12px;
     font-style: regular;
     font-size: 15px
 }
+
+
