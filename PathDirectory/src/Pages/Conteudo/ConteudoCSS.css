@@ -5,6 +5,7 @@
 .cud-main{
     display: flex;
     flex-direction: column;
+    position: relative;
 
     width: 100vw;
     height: 100vh;
@@ -26,6 +27,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    position: relative;
 
 
 }
@@ -212,6 +215,27 @@
     background-color: #95eb54b1;
     border-radius: 10px;
     border: solid 1px #ffffff;
+
+}
+
+.duvidas{
+    position: absolute;
+   
+    width: 30%;
+    height: 55%;
+
+    left: 70%;
+    top: 15%;
+}
+
+.dicas{
+    position: absolute;
+   
+    width: 28%;
+    height: 75%;
+
+    left: 2%;
+    top: 15%;
 
 }
 
