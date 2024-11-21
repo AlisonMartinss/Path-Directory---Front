@@ -22,7 +22,7 @@ function Conteudo () {
 
                         
                         <div className='cud-input_Path cud-input-lin'>
-                            <input className='cud-inside_link cud_inside-glo global-txt' type="text" id="nome" name="nome" placeholder="Digite o link do conteudo"/>
+                            <input className='cud-inside_link cud_inside-glo global-txt' type="text" id="nome" name="nome" placeholder="Cole o link do conteudo"/>
 
                             <select className='cud-opc' id="opcoes" name="opcao">
                                 <option value="yTube">Video no YouTube</option>
@@ -32,13 +32,12 @@ function Conteudo () {
                         
 
                         <div className='cud-descricao '>
-                            <textarea className='cud-descricao_area global-txt' placeholder='Descreva seu Path . . .' id="description" name="description" rows="4" cols="50" maxlength="3000"></textarea>
+                            <textarea className='cud-descricao_area global-txt' placeholder='Adicione uma descrição a essa aula (opcional)' id="description" name="description" rows="4" cols="50" maxlength="3000"></textarea>
                         </div>
 
                         <div className='botoes'>
-                         <button className='cud-botao' type="submit">Enviar</button>
-                         <button className='cud-botaoSalvar' type="submit">Enviar</button>
-
+                            <button className='cud-botao' type="submit">Enviar</button>
+                            <button className='cud-botaoSalvar' type="submit">Salvar</button>
                         </div>
 
                         
