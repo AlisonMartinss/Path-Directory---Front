@@ -1,0 +1,122 @@
+.body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 10%;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+
+}
+
+.tumb{
+    display: flex;
+    align-items: flex-start;
+
+    margin-top: 1%;
+
+    width: 95%;
+    height: 95%;
+
+}
+
+.tumb_path{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    width: 23%;
+    height: 33%;
+
+    margin-left: 2%;
+
+
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+}
+
+.path_perfil{
+    background-color: #88D23E;
+    width: 100%;
+    height: 25%;
+
+    border: solid 2px #ffff;
+    border-top: #88d23e00;
+}
+
+.perfil_foto{
+    width: 16%;
+    height: 98%;
+    border-radius: 50%;
+    background-color: #ced4e0;
+
+    margin-left: 5%;
+    margin-top: -9%;
+
+    border: solid #ffff 2px;
+}
+
+.path_backg{
+    width: 100%;
+    height: 50%;
+    background-color: #8791AB;
+
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+    border: solid 2px #ffff;
+}
+
+.perfil_titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 70%;
+    height: 50%;
+    
+
+    margin-left: 25%;
+    margin-top: -5%;
+
+    color: #ffffff;
+    font-family: "Urbanist", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: clamp(5px,1vw,35px)
+}
+
+.path_titulo{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 2%;
+    padding-top: 1%;
+
+    width: 100%;
+    height: 15%;
+
+    color: #000000;
+    font-family: "Urbanist", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: clamp(5px,1vw,35px)
+
+}

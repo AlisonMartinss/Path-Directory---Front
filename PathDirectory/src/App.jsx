@@ -8,6 +8,7 @@ import Path from '../src/Pages/Path/Path'
 import Criarmodulo from './Pages/CriarModulo/Criarmodulo'
 import Conteudo from './Pages/Conteudo/Conteudo'
 import Duvidas from './Pages/FunçõesGlobais/Duvidas/Duvidas'
+import PathExplorer from './Pages/PathsExplorer/PathExplorer'
 
 
 
@@ -30,6 +31,7 @@ createBrowserRouter(createRoutesFromElements(
   <Route path="/loby/path/modulo" element={<Criarmodulo/>}/>
   <Route path="/loby/path/modulo/conteudo" element={<Conteudo/>}/>
   <Route path="/loby/lab" element={<Duvidas/>}/>
+  <Route path="/loby/PathExplorer" element={<PathExplorer/>}/>
 </Route>
 ))
 
