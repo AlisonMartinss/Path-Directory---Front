@@ -37,24 +37,23 @@
 
     overflow-y: scroll;
 
-    width: 650px;
-    height: 680px;
+    width: 550px;
+    height: 590px;
 
-    left: 2%;
+    left: 4%;
 
 
-    background-color: aqua;
 }
 
 .lista::-webkit-scrollbar{
-    width: 10px;
-    border: solid #5b7ad6 1px;
-    border-radius: 10px;
+    width: 18px;
+    border: solid #6F6E6E 1px;
+    
 }
 
 .lista::-webkit-scrollbar-thumb{
-   background-color: #5bd68a;
-   border-radius: 10px;
+   background-color: #87D23E;
+  
 }
 
 .lista_item{
@@ -62,11 +61,11 @@
     justify-content: center;
     align-items: center;
 
-    margin: 2% 0% 0% 2%;
+    margin: 4% 0% 0% 2%;
 
     background-color:#A8A6A6;
     width: 95%;
-    height:80px;
+    height:110px;
 
     border-radius:5px ;
 
@@ -78,7 +77,7 @@
     justify-content: center;
     align-items: center;
 
-    width: 35%;
+    width: 32%;
     height: 100%;
 
     background-color: #A8A6A6;
@@ -99,7 +98,7 @@
 
     background-color: aliceblue;
     width: 25%;
-    height: 58%;
+    height: 53%;
 
     border-radius: 50%;
    
@@ -136,8 +135,8 @@
 }
 
 .redeG{
-    width: 15%;
-    height: 65%;
+    width: 13%;
+    height: 50%;
 
     margin-left: 4%;
     border-radius: 3px;
@@ -221,11 +220,11 @@
     align-items: center;
 
     background-color: #42ff42;
-    width: 16%;
-    height: 51%;
+    width: 20%;
+    height: 50%;
 
     border-radius: 10px;
-    margin-left: 1%;
+    margin-left: 2%;
 }
 
 .h4{
