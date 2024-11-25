@@ -9,6 +9,7 @@ import Criarmodulo from './Pages/CriarModulo/Criarmodulo'
 import Conteudo from './Pages/Conteudo/Conteudo'
 import Duvidas from './Pages/FunçõesGlobais/Duvidas/Duvidas'
 import PathExplorer from './Pages/PathsExplorer/PathExplorer'
+import ConteudoPath from './Pages/ConteudoPath/ConteudoPath'
 
 
 
@@ -32,6 +33,7 @@ createBrowserRouter(createRoutesFromElements(
   <Route path="/loby/path/modulo/conteudo" element={<Conteudo/>}/>
   <Route path="/loby/lab" element={<Duvidas/>}/>
   <Route path="/loby/PathExplorer" element={<PathExplorer/>}/>
+  <Route path="/loby/PathExplorer/ConteudoPath" element={<ConteudoPath/>}/>
 </Route>
 ))
 
