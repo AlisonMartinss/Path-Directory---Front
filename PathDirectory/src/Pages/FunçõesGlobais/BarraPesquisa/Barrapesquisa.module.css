@@ -1,0 +1,46 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+.barraPesquisa{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    width: 35%;
+    height: 60%;
+
+    border-radius: 30px;
+    border: solid #ffff 2px;
+
+    background-color: #6f6e6e94;
+    outline: none;
+
+    padding-left: 2%;
+
+    color: #ffffff;
+    font-family: "Urbanist", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size:clamp(10px,1vw,25px);
+    
+}
+
+.barraPesquisa::placeholder{
+    
+    color: #ffffff;
+    font-family: "Urbanist", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size:clamp(10px,1vw,25px);
+
+    margin-left: -50%;
+
+}

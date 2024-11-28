@@ -1,0 +1,70 @@
+.body{
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.header{
+    width: 100%;
+    height: 10%;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 90%;
+}
+
+.main_pesquisa{
+    height: 10%;
+    width: 100%;
+
+}
+
+.main_corpo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 90%;
+    width: 100%;
+
+}
+
+.corpo_c1{
+    height: 100%;
+    width: 33%;
+}
+
+.corpo_c2{
+    height: 100%;
+    width: 33%;
+    margin: 0% 1% 0% 1%;
+
+    background-color: rgb(12, 12, 228);
+
+}
+
+.corpo_c3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 33%;
+}
+
+.corpo_perfil{
+    width: 65%;
+    height: 90%;
+
+    margin-top: -5%;
+    border: solid 2px #7B7B7B;
+    border-radius: 13px;
+
+    background-color: rgb(27, 95, 51);
+}
