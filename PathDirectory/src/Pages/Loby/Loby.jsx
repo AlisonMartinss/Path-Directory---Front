@@ -44,7 +44,28 @@ function Loby () {
 
                     <div className={styles.corpo_c3}>
                         <div className={styles.corpo_perfil}>
-                            <div className={perfil_midias}>
+                            <div className={styles.perfil_midias}>
+                                <img className={styles.perfil_banner} src="https://extra.globo.com/incoming/25082691-3fe-9d8/w1920h1080/pericles_sampa_2020_-1624-2-edit.jpg" alt="imagem"/>
+                            </div>
+                            <div className={styles.midias_perfil}>
+                                <img className={styles.perfil_img} src="https://jpimg.com.br/uploads/2017/04/2796996016-sheldon-pode-ganhar-serie-propria-reproducao.jpg" alt="" />
+                            </div>
+
+                            <div className={styles.perfil_infos}>
+                                <div className={`${styles.info_nome} ${styles.global_format_info}`}>
+                                    Alison Soares
+                                </div>
+
+                                <div className={styles.idEndereco}>ID:6489646</div>
+
+                                <div className={`${styles.info_titulacao} ${styles.global_format_info}`}>
+                                    Dicente de graduação
+                                </div>
+
+                                <div className={styles.preferencias}>Editar preferencias
+
+                                </div>
+
 
                             </div>
 

@@ -59,12 +59,135 @@
 }
 
 .corpo_perfil{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+ 
+
     width: 65%;
     height: 90%;
 
-    margin-top: -5%;
+    margin-top: -12%;
     border: solid 2px #7B7B7B;
     border-radius: 13px;
 
-    background-color: rgb(27, 95, 51);
+
 }
+
+.perfil_midias{
+    position: relative;
+    width: 100%;
+    height: 25%;
+
+    background-color: rgb(84, 165, 237);
+    border-radius:11px ;
+}
+
+.midias_perfil{
+    position: absolute;
+    width: 40%;
+    height: 24%;
+
+    z-index: 2;
+
+    margin-top: 17% ;
+
+    background-color: aliceblue;
+    border-radius: 50%;
+}
+
+.perfil_infos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    height: 75%;
+}
+
+.global_format_info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+    height: 12%;
+    background-color:#7b7b7bb9;
+    border-radius: 11px;
+
+    color: #ffffff;
+    font-family: "Urbanist", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: clamp(10px,1vw,20px);
+}
+
+.info_nome{
+    margin-top: 20%;
+}
+
+.info_titulacao{
+    margin-top: 10%;
+}
+
+.idEndereco{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 80%;
+    height: 8%;
+
+    color: #000000;
+    font-family: "Urbanist", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: clamp(10px,1vw,20px);
+
+    padding-left: 5%;
+}
+
+.preferencias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 80%;
+    height: 9%;
+
+    margin-top: 10%;
+    border-radius: 11px;
+    border: solid #ffff 2px; 
+
+    background-color: #88D23E;
+
+    color: #ffffff;
+    font-family: "Urbanist", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(10px,1vw,20px);
+}
+
+.perfil_img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+    border: solid #ffff 2px;
+}
+
+.perfil_banner{
+    width: 100%;
+    height: 100%;
+
+    border-bottom: solid #ffffff 3px;
+
+    border-radius: 11px;
+
+}
+
