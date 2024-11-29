@@ -39,6 +39,17 @@ function Loby () {
                     </div>
 
                     <div ref={usoRef} className={styles.corpo_c2}>
+                        <div className={styles.corpo_lembrete}>
+                            <div className={styles.lembrete_txt}>
+                                Testando os recados deixados para motivar o usuario.
+                            </div>
+
+                            <div className={styles.lembrete_txt}>
+                                TESTE
+                            </div>
+                            
+
+                        </div>
 
                     </div>
 

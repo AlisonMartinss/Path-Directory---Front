@@ -41,11 +41,13 @@
 }
 
 .corpo_c2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     height: 100%;
     width: 33%;
     margin: 0% 1% 0% 1%;
-
-    background-color: rgb(12, 12, 228);
 
 }
 
@@ -113,7 +115,7 @@
     align-items: center;
 
     width: 80%;
-    height: 12%;
+    height: 9%;
     background-color:#7b7b7bb9;
     border-radius: 11px;
 
@@ -190,4 +192,58 @@
     border-radius: 11px;
 
 }
+
+.corpo_lembrete{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: -7%;
+
+    width:77%;
+    height: 75%;
+    background-color: #949494ab;
+    border-radius: 30px;
+
+   
+}
+
+.lembrete_txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 85%;
+    height: 22%;
+
+    margin-top: 8%;
+    border-radius: 15px;
+
+    background-color: #ffffff;
+
+    padding-left: 4%;
+    padding-right: 3%;
+
+    color: #000000;
+    font-family: "Urbanist", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: clamp(10px,1vw,20px);
+
+    cursor: pointer;
+    transition: all 0.5s ease;
+    transform: translateY(0px);
+
+    
+}
+
+.lembrete_txt:hover{
+ 
+    transform: translateY(-6px);
+    transition: all 0.3s ease;
+    box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.251);
+
+}
+
 
