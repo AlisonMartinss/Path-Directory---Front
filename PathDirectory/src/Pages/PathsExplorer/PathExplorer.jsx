@@ -1,5 +1,6 @@
 import styles from '../PathsExplorer/PathEx.module.css'
 import Home2 from '../Home2/Home2'
+import Barrapesquia from '../FunçõesGlobais/BarraPesquisa/Barrapesquisa'
 
 function PathExplorer () {
     return (
@@ -9,6 +10,7 @@ function PathExplorer () {
           <Home2/>
         </header>
         <main className={styles.main}>
+          <div className={styles.pesquisa}> <Barrapesquia/> </div>
           <div className={styles.tumb}>
               <div className={styles.tumb_path}>
 

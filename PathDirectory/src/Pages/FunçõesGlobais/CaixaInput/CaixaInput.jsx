@@ -1,29 +1,31 @@
 import '../../FunçõesGlobais/CaixaInput/CaixaInput.css'
+import {useState} from 'react';
 
-function CaixaInput () {
+function CaixaInput (props) {
+
+ 
     return (
-    <select className='opcoes_input'  id="opcoes" name="opcoes">
 
-        <option value="adjetivo1">- Direto ao ponto</option>
-        <option value="adjetivo2">- Para passar na prova</option>
-        <option value="adjetivo3">- Aulas de aprofundamento</option>
-        <option value="adjetivo4">- Material longo</option>
-        <option value="adjetivo5">- Material curto</option>
+    <select onChange={props.setInputs} className='opcoes_input'  id="opcoes" name="opcoes">
 
-        <option value="adjetivo6">- Material teórico</option>
-        <option value="adjetivo7">- Material pratico</option>
-        <option value="adjetivo8">- Para iniciantes</option>
-        <option value="adjetivo9">- Para intermediários</option>
-        <option value="adjetivo10">- Para avançados</option>
+        <option value="Direto ao ponto">- Direto ao ponto</option>
+        <option value="Para passar na prova">- Para passar na prova</option>
+        <option value="Aulas de aprofundamento">- Aulas de aprofundamento</option>
+        <option value="Material longo">- Material longo</option>
+        <option value="Material curto">- Material curto</option>
 
-        <option value="adjetivo11">- Para revisão rápida</option>
-        <option value="adjetivo12">- Voltada para provas específicas</option>
-        <option value="adjetivo13">- De reforço</option>
-        <option value="adjetivo14">- Orientada a projetos</option>
-        <option value="adjetivo15">- Para aplicação no mercado</option>
+        <option value="Material teórico">- Material teórico</option>
+        <option value="Material pratico">- Material pratico</option>
+        <option value="Para iniciantes">- Para iniciantes</option>
+        <option value="Para intermediários">- Para intermediários</option>
+        <option value="Para avançados">- Para avançados</option>
 
-
-        
+        <option value="Para revisão rápida">- Para revisão rápida</option>
+        <option value="Voltada para provas específicas">- Voltada para provas específicas</option>
+        <option value="De reforço">- De reforço</option>
+        <option value="Orientada a projetos">- Orientada a projetos</option>
+        <option value="Para aplicação no mercado">- Para aplicação no mercado</option>
+ 
     </select>
 
     )

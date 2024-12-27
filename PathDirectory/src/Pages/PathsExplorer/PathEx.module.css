@@ -19,7 +19,9 @@
 
 .main{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 
 }
 
@@ -29,8 +31,8 @@
 
     margin-top: 1%;
 
-    width: 95%;
-    height: 95%;
+    width: 100%;
+    height: 90%;
 
 }
 
@@ -39,11 +41,12 @@
     flex-direction: column;
     align-items: flex-end;
 
-    width: 23%;
+    width: 20%;
     height: 33%;
 
     margin-left: 2%;
 
+    cursor: pointer;
 
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
@@ -119,4 +122,10 @@
     font-style: normal;
     font-size: clamp(5px,1vw,35px)
 
+}
+
+.pesquisa{
+    width: 100%;
+    height: 10%;
+    
 }
