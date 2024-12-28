@@ -5,15 +5,39 @@ import '../../../public/Midias/etapas-img.png'
 import {useEffect, useState} from 'react'
 
 function Path () {
-  /*
-  - Lista de adjetivos para guardar os inputas de adjetovos.
-  
-  */
-   const [adjectives, setadjectives] = useState([]);
-   const [pathName, setPath] = useState();
-   const [description, setDesc] = useState();
 
+  const [formData, setFormData] = useState({
+    name: "",
+    descripitions: "",
+    adjectives: ["1","2","3","4","5"],
+  });
 
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleModuloChange = (event,index) => {
+    const updatedModulos = [...formData.adjectives];
+    updatedModulos[index] =  event.target.value;
+    setFormData({ ...formData, adjectives: updatedModulos });
+  };
+
+  useEffect(function() {
+    console.log(formData.name);
+    console.log(formData.descripitions);
+  },[formData]);
+
+  useEffect(function() {
+    console.log("=-=-=-=-=- TENTANDO MOSTRAR LISTA -=-=-=-=-=");
+    for (let i = 0; i < formData.adjectives.length; i++){
+      console.log(formData.adjectives[i]);
+    }
+  },[formData.adjectives]);
+
+  /*const [adjectives, setadjectives] = useState([]);
+    const [pathName, setPath] = useState();
+    const [description, setDesc] = useState();
 
   const handleChange = (event,index) => {
     const newArray = [...adjectives];
@@ -26,13 +50,9 @@ function Path () {
     for (let i = 0; i < adjectives.length; i++){
       console.log(adjectives[i]);
     }
-  }, [adjectives]);  // Dependendo de `index` e `adjetivosLista`, o efeito será executado
+  }, [adjectives]);  //Dependendo de `index` e `adjetivosLista`, o efeito será executado */
 
 
-  useEffect(function() {
-    console.log(pathName);
-    console.log(description);
-  },[description,pathName]);
   
 return (
 <main className="all_Path">
@@ -53,7 +73,7 @@ return (
     <div className='central'>
         <form className='form_Path' action="">
             <div className='input_Path'>
-              <input onChange={(event) => setPath(event.target.value)} className='inside_input_Path' type="text" id="nome" name="nome" placeholder="Digite o nome do seu Path"/>
+              <input onChange={(event) => handleInputChange(event)} className='inside_input_Path' type="text" id="nome" name="name" placeholder="Digite o nome do seu Path"/>
             </div>
             
             <div className='CTO'>
@@ -61,18 +81,18 @@ return (
             </div>
 
             <div className='adjetivos_Path'>
-              <CaixaInput setInputs={(event) => handleChange(event,0)}/>
-              <CaixaInput setInputs={(event) => handleChange(event,1)}/>
-              <CaixaInput setInputs={(event) => handleChange(event,2)}/>
-              <CaixaInput setInputs={(event) => handleChange(event,3)}/>
-              <CaixaInput setInputs={(event) => handleChange(event,4)}/>
+              <CaixaInput setInputs={(event) => handleModuloChange(event,0)}/>
+              <CaixaInput setInputs={(event) => handleModuloChange(event,1)}/>
+              <CaixaInput setInputs={(event) => handleModuloChange(event,2)}/>
+              <CaixaInput setInputs={(event) => handleModuloChange(event,3)}/>
+              <CaixaInput setInputs={(event) => handleModuloChange(event,4)}/>
             </div>
 
             <div className='descricao'>
-             <textarea onChange={(event) => setDesc(event.target.value)} className='descricao_area' placeholder='Descreva seu Path . . .' id="description" name="description" rows="4" cols="50" maxlength="3000"></textarea>
+             <textarea onChange={(event) => handleInputChange(event)} name="descripitions" className='descricao_area' placeholder='Descreva seu Path . . .' id="description" rows="4" cols="50" maxlength="3000"></textarea>
             </div>
 
-            <input onChange={} className='submit_Path' type="submit" value="Enviar"></input>
+            <input className='submit_Path' type="submit" value="Enviar"></input>
            
         </form>
 
