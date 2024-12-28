@@ -19,6 +19,7 @@ import './Estiloapp/estiloDoApp.css'
 import '../src/App.css'
 
 import { useState } from 'react'
+import { PathProvider } from './Providers/pathProvider'
 
 const browserRouter = 
 createBrowserRouter(createRoutesFromElements(
@@ -28,12 +29,37 @@ createBrowserRouter(createRoutesFromElements(
   <Route path="/loby" element={<Loby/>}/>
   <Route path="/star" element={<StarButton/>}/>
   <Route path="/loby/curso" element={<Curso/>}/>
-  <Route path="/loby/path" element={<Path/>}/>
-  <Route path="/loby/path/modulo" element={<Criarmodulo/>}/>
-  <Route path="/loby/path/modulo/conteudo" element={<Conteudo/>}/>
   <Route path="/loby/lab" element={<Duvidas/>}/>
   <Route path="/loby/PathExplorer" element={<PathExplorer/>}/>
   <Route path="/loby/PathExplorer/ConteudoPath" element={<ConteudoPath/>}/>
+
+  {/* Envolvendo apenas as rotas relacionadas a "path" com o contexto */}
+  <Route
+        path="/loby/path"
+        element={
+          <PathProvider>
+            <Path />
+          </PathProvider>
+        }
+  />
+  <Route
+          path="modulo"
+          element={
+            <PathProvider>
+              <Criarmodulo />
+            </PathProvider>
+          }
+  />
+  <Route
+          path="modulo/conteudo"
+          element={
+            <PathProvider>
+              <Conteudo />
+            </PathProvider>
+          }
+  />
+
+
 </Route>
 ))
 

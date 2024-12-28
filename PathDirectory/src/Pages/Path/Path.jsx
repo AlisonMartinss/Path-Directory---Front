@@ -2,15 +2,23 @@ import '../Path/Path.css'
 import Home2 from "../Home2/Home2";
 import CaixaInput from '../FunçõesGlobais/CaixaInput/CaixaInput';
 import '../../../public/Midias/etapas-img.png'
-import {useEffect, useState} from 'react'
+
+
+
+import {useContext, useEffect, useState} from 'react'
+import { PathContext } from '../../Providers/pathProvider';
+
+
 
 function Path () {
 
-  const [formData, setFormData] = useState({
+  const {setFormData, formData} = useContext(PathContext);
+
+  /*const [formData, setFormData] = useState({
     name: "",
     descripitions: "",
     adjectives: ["1","2","3","4","5"],
-  });
+  });*/
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
@@ -73,7 +81,8 @@ return (
     <div className='central'>
         <form className='form_Path' action="">
             <div className='input_Path'>
-              <input onChange={(event) => handleInputChange(event)} className='inside_input_Path' type="text" id="nome" name="name" placeholder="Digite o nome do seu Path"/>
+              <input onChange={(event) => handleInputChange(event)} className='inside_input_Path' 
+              type="text" id="nome" name="name" placeholder="Digite o nome do seu Path"/>
             </div>
             
             <div className='CTO'>
@@ -89,7 +98,9 @@ return (
             </div>
 
             <div className='descricao'>
-             <textarea onChange={(event) => handleInputChange(event)} name="descripitions" className='descricao_area' placeholder='Descreva seu Path . . .' id="description" rows="4" cols="50" maxlength="3000"></textarea>
+             <textarea onChange={(event) => handleInputChange(event)} name="descripitions" 
+             className='descricao_area' placeholder='Descreva seu Path . . .' id="description" rows="4" 
+             cols="50" maxlength="3000"></textarea>
             </div>
 
             <input className='submit_Path' type="submit" value="Enviar"></input>

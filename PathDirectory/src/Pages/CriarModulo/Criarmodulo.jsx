@@ -1,8 +1,26 @@
 import '../CriarModulo/Criarmodulo.css'
 import '../../../public/Midias/etapas-img.png'
 import Home2 from '../Home2/Home2';
+import {useEffect, useState} from 'react'
 
 function Criarmodulo () {
+
+    const [formData, setFormData] = useState({
+      name: "",
+      descripitions: "",
+    });
+
+    const handleInputChange = (event) => {
+        const { name, value } = event.target;
+        setFormData({ ...formData, [name]: value });
+      };
+
+    useEffect(function() {
+      console.log(formData.name);
+      console.log(formData.descripitions);
+    },[formData]);
+
+
     return (
         <div className='main_modulo'>
             <header className='header_Path'>
@@ -26,11 +44,14 @@ function Criarmodulo () {
 
                     <form className='CrMo-form' action="">
                         <div className='CrMo-input_Path'>
-                            <input className='CrMo-inside_input_Path' type="text" id="nome" name="nome" placeholder="Digite o nome do modulo"/>
+                            <input onChange={(event) => handleInputChange(event)} className='CrMo-inside_input_Path' type="text" 
+                            id="name" name="name" placeholder="Digite o nome do modulo"/>
                         </div>
 
                         <div className='CrMo-descricao'>
-                            <textarea className='CrMo-descricao_area' placeholder='Descreva seu Path . . .' id="description" name="description" rows="4" cols="50" maxlength="3000"></textarea>
+                            <textarea onChange={(event) => handleInputChange(event)} className='CrMo-descricao_area' 
+                            placeholder='Descreva seu Path . . .' id="description" name="descripitions" rows="4" cols="50" 
+                            maxlength="3000"></textarea>
                         </div>
 
                         <button className='CrMo-botao' type="submit">Enviar</button>
