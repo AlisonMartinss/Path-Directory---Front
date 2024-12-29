@@ -34,32 +34,20 @@ createBrowserRouter(createRoutesFromElements(
   <Route path="/loby/PathExplorer/ConteudoPath" element={<ConteudoPath/>}/>
 
   {/* Envolvendo apenas as rotas relacionadas a "path" com o contexto */}
-  <Route
-        path="/loby/path"
-        element={
-          <PathProvider>
-            <Path />
-          </PathProvider>
-        }
-  />
-  <Route
-          path="modulo"
-          element={
-            <PathProvider>
-              <Criarmodulo />
-            </PathProvider>
-          }
-  />
-  <Route
-          path="modulo/conteudo"
-          element={
-            <PathProvider>
-              <Conteudo />
-            </PathProvider>
-          }
-  />
+  <Route path="/loby/path" element={
+    <PathProvider>
+      <Path />
+    </PathProvider>}/>
 
-
+  <Route path="/loby/path/modulo" element={
+    <PathProvider>
+      <Criarmodulo />
+    </PathProvider>}/>
+  
+  <Route path="/loby/path/modulo/conteudo" element={
+    <PathProvider>
+       <Conteudo />
+    </PathProvider>}/>
 </Route>
 ))
 

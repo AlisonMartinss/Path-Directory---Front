@@ -12,36 +12,32 @@ import { PathContext } from '../../Providers/pathProvider';
 
 function Path () {
 
-  const {setFormData, formData} = useContext(PathContext);
+  const {formDataPath, setFormDataPath} = useContext(PathContext);
 
-  /*const [formData, setFormData] = useState({
-    name: "",
-    descripitions: "",
-    adjectives: ["1","2","3","4","5"],
-  });*/
+ 
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
-    setFormData({ ...formData, [name]: value });
+    setFormDataPath({ ...formDataPath, [name]: value });
   };
 
   const handleModuloChange = (event,index) => {
-    const updatedModulos = [...formData.adjectives];
+    const updatedModulos = [...formDataPath.adjectives];
     updatedModulos[index] =  event.target.value;
-    setFormData({ ...formData, adjectives: updatedModulos });
+    setFormDataPath({ ...formDataPath, adjectives: updatedModulos });
   };
 
   useEffect(function() {
-    console.log(formData.name);
-    console.log(formData.descripitions);
-  },[formData]);
+    console.log(formDataPath.name);
+    console.log(formDataPath.descripitions);
+  },[formDataPath]);
 
   useEffect(function() {
     console.log("=-=-=-=-=- TENTANDO MOSTRAR LISTA -=-=-=-=-=");
-    for (let i = 0; i < formData.adjectives.length; i++){
-      console.log(formData.adjectives[i]);
+    for (let i = 0; i < formDataPath.adjectives.length; i++){
+      console.log(formDataPath.adjectives[i]);
     }
-  },[formData.adjectives]);
+  },[formDataPath.adjectives]);
 
   /*const [adjectives, setadjectives] = useState([]);
     const [pathName, setPath] = useState();
@@ -58,7 +54,15 @@ function Path () {
     for (let i = 0; i < adjectives.length; i++){
       console.log(adjectives[i]);
     }
-  }, [adjectives]);  //Dependendo de `index` e `adjetivosLista`, o efeito será executado */
+  }, [adjectives]);
+  
+  const [formData, setFormData] = useState({
+    name: "",
+    descripitions: "",
+    adjectives: ["1","2","3","4","5"],
+  });
+  
+  //Dependendo de `index` e `adjetivosLista`, o efeito será executado */
 
 
   

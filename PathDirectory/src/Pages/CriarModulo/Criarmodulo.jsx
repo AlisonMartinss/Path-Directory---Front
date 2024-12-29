@@ -1,24 +1,24 @@
 import '../CriarModulo/Criarmodulo.css'
 import '../../../public/Midias/etapas-img.png'
 import Home2 from '../Home2/Home2';
-import {useEffect, useState} from 'react'
+
+import {useContext, useEffect, useState} from 'react'
+import { PathContext } from '../../Providers/pathProvider';
 
 function Criarmodulo () {
 
-    const [formData, setFormData] = useState({
-      name: "",
-      descripitions: "",
-    });
+    const {formDataModulo, setFormDataModulo} = useContext(PathContext);
+
 
     const handleInputChange = (event) => {
         const { name, value } = event.target;
-        setFormData({ ...formData, [name]: value });
+        setFormDataModulo({ ...formDataModulo, [name]: value });
       };
 
     useEffect(function() {
-      console.log(formData.name);
-      console.log(formData.descripitions);
-    },[formData]);
+      console.log(formDataModulo.name);
+      console.log(formDataModulo.descripitions);
+    },[formDataModulo]);
 
 
     return (
