@@ -15,7 +15,10 @@ export const PathProvider = ({ children }) => {
         name: "",
         descripitions: "",
       });
- return <PathContext.Provider value={{formDataPath,setFormDataPath,formDataModulo,setFormDataModulo}}>
+
+    const [formClass, setClass] = useState([]);
+    
+ return <PathContext.Provider value={{formDataPath,setFormDataPath,formDataModulo,setFormDataModulo,formClass,setClass}}>
             {children}
         </PathContext.Provider>
 }

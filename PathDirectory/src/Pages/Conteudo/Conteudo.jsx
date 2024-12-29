@@ -6,7 +6,12 @@ import Dicas from '../FunçõesGlobais/Dicas/Dicas';
 import '../../../public/Midias/comoLidar.png'
 import {useEffect, useState} from 'react'
 
+import {useContext, useEffect, useState} from 'react'
+import { PathContext } from '../../Providers/pathProvider';
+
 function Conteudo () {
+
+    const {formClass, setClass} = useContext(PathContext);
 
     /*const [formClass, setClass] = useState([{
         name:"",
@@ -21,7 +26,7 @@ function Conteudo () {
           setContagem(contagem + 1); // Incrementa o estado
           alert(contagem); // Mostra o próximo valor
         }
-    const [formClass, setClass] = useState([]);
+
 
     const [titleData,setTitle] = useState("");
     const [linkData,setLink]   = useState("");
