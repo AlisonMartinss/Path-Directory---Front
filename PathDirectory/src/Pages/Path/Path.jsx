@@ -5,14 +5,16 @@ import '../../../public/Midias/etapas-img.png'
 
 
 
-import {useContext, useEffect, useState} from 'react'
+import {useContext, useEffect} from 'react'
 import { PathContext } from '../../Providers/pathProvider';
+import { useNavigate } from "react-router-dom";
 
 
 
 function Path () {
 
   const {formDataPath, setFormDataPath} = useContext(PathContext);
+  const navigate = useNavigate(); // Declarar o hook useNavigate
 
  
 
@@ -27,7 +29,7 @@ function Path () {
     setFormDataPath({ ...formDataPath, adjectives: updatedModulos });
   };
 
-  useEffect(function() {
+  /*useEffect(function() {
     console.log(formDataPath.name);
     console.log(formDataPath.descripitions);
   },[formDataPath]);
@@ -37,7 +39,17 @@ function Path () {
     for (let i = 0; i < formDataPath.adjectives.length; i++){
       console.log(formDataPath.adjectives[i]);
     }
-  },[formDataPath.adjectives]);
+  },[formDataPath.adjectives]);*/
+
+  const handleSubmit = (event) => {
+    event.preventDefault(); // Impede o comportamento padrão do formulário
+    console.log("Dados enviados!");
+
+    // Redirecionar para a próxima página
+    navigate('/loby/path/modulo');
+  };
+
+
 
   /*const [adjectives, setadjectives] = useState([]);
     const [pathName, setPath] = useState();
@@ -83,7 +95,7 @@ return (
     </header>
 
     <div className='central'>
-        <form className='form_Path' action="">
+        <form onSubmit={handleSubmit} className='form_Path' action="">
             <div className='input_Path'>
               <input onChange={(event) => handleInputChange(event)} className='inside_input_Path' 
               type="text" id="nome" name="name" placeholder="Digite o nome do seu Path"/>
@@ -107,7 +119,7 @@ return (
              cols="50" maxlength="3000"></textarea>
             </div>
 
-            <input className='submit_Path' type="submit" value="Enviar"></input>
+          <input className='submit_Path' type="submit" value="Enviar"></input>
            
         </form>
 

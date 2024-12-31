@@ -2,12 +2,15 @@ import '../CriarModulo/Criarmodulo.css'
 import '../../../public/Midias/etapas-img.png'
 import Home2 from '../Home2/Home2';
 
-import {useContext, useEffect, useState} from 'react'
+import {useContext, useEffect} from 'react'
 import { PathContext } from '../../Providers/pathProvider';
+import { useNavigate } from "react-router-dom";
+
 
 function Criarmodulo () {
 
     const {formDataModulo, setFormDataModulo} = useContext(PathContext);
+    const navigate = useNavigate(); // Declarar o hook useNavigate
 
 
     const handleInputChange = (event) => {
@@ -15,10 +18,13 @@ function Criarmodulo () {
         setFormDataModulo({ ...formDataModulo, [name]: value });
       };
 
-    useEffect(function() {
-      console.log(formDataModulo.name);
-      console.log(formDataModulo.descripitions);
-    },[formDataModulo]);
+    const handleSubmit = (event) => {
+        event.preventDefault(); // Impede o comportamento padrão do formulário
+        console.log("Dados enviados!");
+    
+        // Redirecionar para a próxima página
+        navigate('/loby/path/modulo/conteudo');
+      };
 
 
     return (
@@ -42,7 +48,7 @@ function Criarmodulo () {
                         Modulo
                     </div>
 
-                    <form className='CrMo-form' action="">
+                    <form onSubmit={handleSubmit} className='CrMo-form' action="">
                         <div className='CrMo-input_Path'>
                             <input onChange={(event) => handleInputChange(event)} className='CrMo-inside_input_Path' type="text" 
                             id="name" name="name" placeholder="Digite o nome do modulo"/>

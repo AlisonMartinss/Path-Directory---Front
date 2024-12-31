@@ -4,14 +4,63 @@ import Home2 from '../Home2/Home2';
 import Duvidas from '../FunçõesGlobais/Duvidas/Duvidas';
 import Dicas from '../FunçõesGlobais/Dicas/Dicas';
 import '../../../public/Midias/comoLidar.png'
-import {useEffect, useState} from 'react'
+
 
 import {useContext, useEffect, useState} from 'react'
 import { PathContext } from '../../Providers/pathProvider';
 
 function Conteudo () {
 
-    const {formClass, setClass} = useContext(PathContext);
+    const {formDataPath,formDataModulo,formClass,setClass} = useContext(PathContext);
+
+    const [formDataPOST, setFormDataPOST] = useState({
+          name: "",
+          descripitions: "",
+          adjectives: [],
+          modulos: [],
+    });
+
+    const [elementoModulo, setElemento] = useState({
+        name: "",
+        descripitions: "",
+        classN:[]
+  });
+
+    /* =-=-=-=-=-=-=-=-=-= PREENCHIMENTO =-=-=-=-=-=-=-=-=-= */
+
+
+
+
+    const preenchimento = () => {
+        // Cria o novo estado que será salvo
+        const novoElementoModulo = {
+            ...elementoModulo,
+            name: formDataModulo.name,
+            descripitions: formDataModulo.descripitions,
+            classN: [...elementoModulo.classN, ...formClass],
+        };
+    
+        const novoFormDataPOST = {
+            ...formDataPOST,
+            name: formDataPath.name,
+            descripitions: formDataPath.descripitions,
+            adjectives: formDataPath.adjectives,
+            modulos: [...formDataPOST.modulos, novoElementoModulo],
+        };
+    
+        // Atualiza os estados
+        setElemento(novoElementoModulo);
+        setFormDataPOST(novoFormDataPOST);
+    
+        // Exibe no console o valor atualizado
+        console.log("Novo formDataPOST:", JSON.stringify(novoFormDataPOST));
+    };
+    
+
+    /* =-=-=-=-=-=-=-=- FAZENDO CHAMADA PRA END-POINT =-=-=-=-=-=-=-=- */
+
+
+    /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 
     /*const [formClass, setClass] = useState([{
         name:"",
@@ -53,9 +102,23 @@ function Conteudo () {
 
     const mostraLista = () =>{
         console.log("=-=-=-=-=-=-=-=-=-=-=-=-=-=-= ")
-        for (let i = 0; i < formClass.length; i++){
-            console.log(formClass[i]);
-        }
+        console.log("PATH NOME")
+        console.log(formDataPath.name)
+        console.log("PATH DESCRIÇÃO")
+        console.log(formDataPath.descripitions)
+        console.log("PATH ADJETIVOS")
+        console.log(formDataPath.adjectives)
+
+        console.log("=-=-=-=-=-=-=-=-=-=-=-=-=-=-= ")
+        console.log("MODULO NOME")
+        console.log(formDataModulo.name)
+        console.log("MODULO DESCRIÇÃO")
+        console.log(formDataModulo.descripitions)
+
+
+        
+
+
     }
 
     useEffect(function() {
@@ -94,7 +157,10 @@ function Conteudo () {
                         </div>
 
                         <div className='botoes'>
-                            <button className='cud-botao' type="submit">
+                            <button onClick={(event) => {event.preventDefault();
+                                preenchimento();
+                                alert("Chamado!");                               
+                            }} className='cud-botao' type="submit">
                                 Enviar
                             </button>
 
@@ -121,5 +187,6 @@ function Conteudo () {
         </div>
     )
 }
+
 
 export default Conteudo; 
